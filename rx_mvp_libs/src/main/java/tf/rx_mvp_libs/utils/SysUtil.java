@@ -1,4 +1,4 @@
-package tf.rxmvp.utils;
+package tf.rx_mvp_libs.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

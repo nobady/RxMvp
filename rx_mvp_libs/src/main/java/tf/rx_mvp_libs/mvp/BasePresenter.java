@@ -1,4 +1,4 @@
-package tf.rxmvp.mvp;
+package tf.rx_mvp_libs.mvp;
 
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
 
@@ -16,6 +16,7 @@ public abstract class BasePresenter<V extends BaseView> extends MvpBasePresenter
 
 
     public CompositeSubscription mCompositeSubscription;
+
 
     @Override
     public void attachView (V view) {

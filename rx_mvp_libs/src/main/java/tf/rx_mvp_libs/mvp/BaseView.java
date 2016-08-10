@@ -1,4 +1,4 @@
-package tf.rxmvp.mvp;
+package tf.rx_mvp_libs.mvp;
 
 import com.hannesdorfmann.mosby.mvp.MvpView;
 

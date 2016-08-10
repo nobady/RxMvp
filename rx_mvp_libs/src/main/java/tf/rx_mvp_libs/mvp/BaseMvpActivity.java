@@ -1,4 +1,4 @@
-package tf.rxmvp.mvp;
+package tf.rx_mvp_libs.mvp;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -20,6 +20,7 @@ import com.hannesdorfmann.mosby.mvp.delegate.ActivityMvpDelegateImpl;
 public abstract class BaseMvpActivity<V extends BaseView,P extends BasePresenter<V>> extends AppCompatActivity
         implements ActivityMvpDelegateCallback<V,P>,BaseView{
 
+    public static boolean IS_DEBUG = false;
     protected ActivityMvpDelegate mvpDelegate;
     protected P presenter;
     protected boolean retainInstance;

@@ -1,4 +1,4 @@
-package tf.rxmvp.exception;
+package tf.rx_mvp_libs.exception;
 
 /**
  * [Description]

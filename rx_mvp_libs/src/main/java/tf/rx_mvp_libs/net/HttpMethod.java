@@ -1,4 +1,4 @@
-package tf.rxmvp.net;
+package tf.rx_mvp_libs.net;
 
 import android.content.Context;
 
@@ -14,9 +14,9 @@ import rx.android.schedulers.AndroidSchedulers;
 import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.schedulers.Schedulers;
-import tf.rxmvp.BaseActivity;
-import tf.rxmvp.exception.CustomException;
-import tf.rxmvp.utils.SysUtil;
+import tf.rx_mvp_libs.exception.CustomException;
+import tf.rx_mvp_libs.mvp.BaseMvpActivity;
+import tf.rx_mvp_libs.utils.SysUtil;
 
 /**
  * [Description]
@@ -91,7 +91,7 @@ public class HttpMethod {
             OkHttpClient.Builder builder = new OkHttpClient.Builder ();
 
             //Log信息拦截器
-            if(BaseActivity.IS_DEBUG){
+            if(BaseMvpActivity.IS_DEBUG){
                 HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor ();
                 //设置拦截的内容
                 interceptor.setLevel (HttpLoggingInterceptor.Level.BODY);
