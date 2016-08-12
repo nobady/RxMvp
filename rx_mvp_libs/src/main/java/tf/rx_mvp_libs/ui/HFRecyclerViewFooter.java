@@ -25,4 +25,15 @@ public class HFRecyclerViewFooter extends LinearLayout {
         super (context, attrs, defStyleAttr);
     }
 
+    /**
+     * 获取view距离底部的距离
+     * @return
+     */
+    public int getBottomMargin () {
+        return 0;
+    }
+
+    public void setBottomMargin (int height) {
+
+    }
 }
