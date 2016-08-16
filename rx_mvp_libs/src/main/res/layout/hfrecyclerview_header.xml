@@ -1,18 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="#eeeeee"
-    android:gravity="bottom">
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:background="#eeeeee"
+              android:gravity="bottom">
 
     <RelativeLayout
         android:id="@+id/hfrecyclerview_header_content"
-        android:layout_width="fill_parent"
-        android:layout_height="60dp">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <ImageView
+            android:id="@+id/hfrecyclerview_header_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/default_ptr_flip"/>
+
+        <tf.rx_mvp_libs.ui.LoadView
+            android:id="@+id/hfrecyclerview_header_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="100dp"
+            android:visibility="invisible"/>
 
         <LinearLayout
             android:id="@+id/hfrecyclerview_header_text"
             android:layout_width="150dp"
+            android:layout_toRightOf="@id/hfrecyclerview_header_progressbar"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:gravity="center"
@@ -22,7 +40,7 @@
                 android:id="@+id/hfrecyclerview_header_hint_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/hfrecyclerview_header_hint_normal" />
+                android:text="@string/hfrecyclerview_header_hint_normal"/>
 
 
             <TextView
@@ -31,26 +49,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
                 android:text="@string/hfrecyclerview_header_last_time"
-                android:textSize="12sp" />
+                android:textSize="12sp"/>
 
         </LinearLayout>
-
-        <ImageView
-            android:id="@+id/hfrecyclerview_header_arrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="100dp"
-            android:src="@drawable/default_ptr_flip" />
-
-
-        <!--<com.gta.zssx.pub.lfrecycleview.LoadView-->
-            <!--android:id="@+id/hfrecyclerview_header_progressbar"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_centerVertical="true"-->
-            <!--android:layout_marginLeft="100dp"-->
-            <!--android:visibility="invisible" />-->
     </RelativeLayout>
+
 
 </LinearLayout>

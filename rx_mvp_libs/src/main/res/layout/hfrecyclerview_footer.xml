@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="wrap_content">
-    <RelativeLayout
-        android:id="@+id/hfrecyclerview_footer_state"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center">
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:clickable="false"
-            android:layout_marginTop="100dp"
-            android:text="没有任何数据" />
-    </RelativeLayout>
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/hfrecyclerview_footer_state"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="100dp"-->
+            <!--android:clickable="false"-->
+            <!--android:text="没有任何数据"/>-->
+    <!--</RelativeLayout>-->
+
     <RelativeLayout
         android:id="@+id/hfrecyclerview_footer_content"
         android:layout_width="match_parent"
@@ -24,31 +26,35 @@
 
         <LinearLayout
             android:id="@+id/hfrecyclerview_footer_progressbar"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:layout_centerInParent="true"
             android:orientation="horizontal"
-            android:visibility="invisible">
+            android:visibility="gone">
 
-            <com.gta.zssx.pub.lfrecycleview.LoadView
+            <tf.rx_mvp_libs.ui.LoadView
                 android:id="@+id/hfrecyclerview_footer_loadview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
                 />
 
             <TextView
-                android:layout_marginLeft="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="正在加载..." />
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="正在加载..."/>
         </LinearLayout>
 
         <TextView
             android:id="@+id/hfrecyclerview_footer_hint_textview"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity="center"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/hfrecyclerview_footer_hint_normal" />
+            android:text="@string/hfrecyclerview_footer_hint_normal"/>
     </RelativeLayout>
 
 </LinearLayout>
